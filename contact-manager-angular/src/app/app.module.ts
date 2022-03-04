@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -8,6 +9,9 @@ import { AddComponent } from './add/add.component';
 import { AboutComponent } from './about/about.component';
 import { EditComponent } from './edit/edit.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NavbarComponent } from './navbar/navbar.component';
+import { FooterComponent } from './footer/footer.component';
+import { JumbotronComponent } from './jumbotron/jumbotron.component';
 
 @NgModule({
   declarations: [
@@ -15,10 +19,14 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     HomeComponent,
     AddComponent,
     AboutComponent,
-    EditComponent
+    EditComponent,
+    NavbarComponent,
+    FooterComponent,
+    JumbotronComponent
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule,
     RouterModule.forRoot([
       { 
@@ -32,7 +40,11 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     { 
       path: 'about',
       component: AboutComponent
-   }
+    },
+    { 
+      path: 'edit',
+      component: EditComponent
+    }
     ]),
     NgbModule
   ],

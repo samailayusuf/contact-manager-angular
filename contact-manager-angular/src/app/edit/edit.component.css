@@ -1,0 +1,18 @@
+.dark{
+    background-color: #222;
+    color: #fff;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.bordered{
+    border: 1px solid #f0f0f0;
+    padding:10px;
+    background-color: #f8f8f8;
+}
+
+.form-head{
+    background-color: #e8e8e8;
+    margin-bottom: 0;
+    padding: 15px;
+}
