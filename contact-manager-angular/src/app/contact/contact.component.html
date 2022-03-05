@@ -1,0 +1,30 @@
+<div class="wrap">
+<p class="inner" >
+    <br/>
+    {{contactName}} 
+    <span   (click)="collapse.toggle()" 
+            [attr.aria-expanded]="!gfg"
+      aria-controls="collapseExample"
+      class="glyphicon glyphicon-arrow-down"
+      >
+</span>
+
+<span class="pull-right spaced">
+    <span class="glyphicon glyphicon-pencil spaced"> </span>
+    <span class="glyphicon glyphicon-trash spaced"> </span>
+</span>
+
+  </p>
+    
+  <div #collapse="ngbCollapse" 
+       [(ngbCollapse)]="gfg">
+    <div class="card">
+      <div class="card-body wrap spaced" style="margin-bottom:10px; background-color:#f8f8f8">
+        <p class="spaced padded">Email: {{contactEmail}}</p>
+        <hr/>
+        <p class="spaced padded">Phone: {{contactPhone}}</p>
+      </div>
+    </div>
+  </div>
+
+</div>

@@ -1,0 +1,16 @@
+.wrap{
+    border: 1px solid #abc;
+    border-radius:5px;
+    margin:10px;
+}
+
+.inner{
+    margin-left: 10px;
+}
+.spaced{
+    margin:0px 10px;
+}
+
+.padded{
+    padding: 0;
+}

@@ -4,15 +4,15 @@
     <form action="/action_page.php" class="bordered">
         <div class="form-group">
           <label for="name">Name:</label>
-          <input type="text" class="form-control" id="name" placeholder="Enter name">
+          <input type="text" ngModel = "name" class="form-control" id="name" placeholder="Enter name">
         </div>
         <div class="form-group">
           <label for="pwd">Email:</label>
-          <input type="email" class="form-control" id="pwd" placeholder="Enter email">
+          <input type="email" ngModel = "email" class="form-control" id="pwd" placeholder="Enter email">
         </div>
         <div class="form-group">
             <label for="phone">Phone:</label>
-            <input type="text" class="form-control" id="phone" placeholder="Enter phone">
+            <input type="text" ngModel = "phone" class="form-control" id="phone" placeholder="Enter phone">
           </div>
         <button type="submit" class="btn dark btn-block">Submit</button>
       </form>

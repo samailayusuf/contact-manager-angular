@@ -12,6 +12,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { JumbotronComponent } from './jumbotron/jumbotron.component';
+import { ContactComponent } from './contact/contact.component';
+import { StoreModule } from '@ngrx/store';
+import { reducer } from '../reducers/contact.reducer';
 
 @NgModule({
   declarations: [
@@ -22,11 +25,16 @@ import { JumbotronComponent } from './jumbotron/jumbotron.component';
     EditComponent,
     NavbarComponent,
     FooterComponent,
-    JumbotronComponent
+    JumbotronComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
+    StoreModule.forRoot({
+      contact: reducer
+     }),
     HttpClientModule,
+    NgbModule,
     AppRoutingModule,
     RouterModule.forRoot([
       { 

@@ -1,6 +1,17 @@
 <app-navbar></app-navbar>
 <app-jumbotron></app-jumbotron>
 
-<p>home works!</p>
+<div class="container" >
+
+<app-contact *ngFor="let contact of contacts"
+  [contactName]="contact.name"
+  [contactEmail]="contact.email"
+  [contactPhone]="contact.phone"
+  [contactID]="contact.id"
+>
+
+</app-contact>
+
+</div>
 
 <app-footer></app-footer>
