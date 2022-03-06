@@ -1,6 +1,6 @@
 import {createStore} from '@stencil/store';
 
-const { state} = createStore({
+const { state} = createStore({ //
     contacts: []
 });
 
